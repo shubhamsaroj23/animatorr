@@ -21,7 +21,8 @@ html,body{
    
 
     /* font family variables. */ 
-    --roboto: 'Roboto', cursive;
+    --roboto: 'Roboto',cursive;
+
 } 
 .title-text{
     font: normal bold 50px/72px var(--roboto);
@@ -30,10 +31,7 @@ html,body{
 .title-uppercase{
     text-transform: uppercase;
 }
-@font-face {
-    font-family: Roboto;
-    src: '../fonts/Roboto/Roboto-Regular.ttf';
-}
+
 /* Buttons */
 
 .button{
@@ -111,6 +109,7 @@ h1{
 h2{
     font-size: 0rem;
     font-family:'roboto', cursive;
+
 }
 
 .instaimg img {margin-bottom:30px;}
@@ -302,17 +301,50 @@ footer.footer-area .social a:hover > i{
         width: 13rem;
     }
 
+    
+
+}
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 792px){
+    .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    
+    .site-main .project-area .button-group button{
+        font: normal 500 18px/40px var(--roboto);
+    }
+
+    .site-main .about-area .about-title p{
+        padding: 0%;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 20rem;
+        margin: 5%;
+    }
 }
 
 
 
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+    .header_area .main-menu .navbar{
+        padding: 1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .brand-area,
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
 
 
-
-
-
-
-
-
-
-
+}
