@@ -17,13 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from . import views
 
 from .views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',show_home_page),
-    path('contact',show_home_page),
-    path('',show_home_page),
+    path('home',home),
+    path('contact/',home),
+    path('blog',blog),
+    path('',home),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 

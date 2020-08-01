@@ -1,103 +1,35 @@
 
+
+{% extends 'base.html' %}
 {% load static%}
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-     <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/120b98d6e2.js" crossorigin="anonymous"></script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <title>The Animator</title>
-
-
-    <!--  Bootstrap css file  -->
-    
-
-
-    <!--  custom css file  -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-
-    <!--  Responsive css file  -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162157591-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-162157591-2');
-</script>
-
-
-
-</head>
-
-<body>
-<!--Start Navbar-->
-
-<header class="header_area">
-  <div class="main-menu">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand" href="#"><img src="media/logo.jpeg" alt="Animator"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="mr-auto"></div>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-</header>
-
-<!--End Navbar-->
-
-<!--Main Area-->
-
+{% block body %}
 <main class="site-main">
 <!--start banner-->
 <section class="site-banner">
-  <div class="container">
-    <div class="row">
+  <div class="container" >
+    <div class="row" style="background-color: antiquewhite;border-radius: 10px;box-shadow: 10px 10px 5px grey;">
       <div class="col-lg-6 col-md-12 site-title">
         </br>
         </br>
         </br>
         </br>
         </br>
-        <h1 class="title-text-upprrcase" id="effect"></h1>
+        <center>
+        <div class="container">
+          <h1 class="title-text-upprrcase" id="effect"></h1>
         <h4 class="title-text-upprrcase">Vectors & Illustrator</h4>
         <div class="site-button">
-          <div class="d-flex flex-row flex-wrap">
+          <div>
             <a type="button" class="btn button primary-button mr-4 text-upprrcase" href="https://www.fiverr.com/shubhamsaroj" target="_blank">Fiverr</a>
           </div>
         </div>
+        </div>
+      </center>
       </div>
-      <div class="col-lg-6 col-md-12 banner-image">
-        <img srcset="https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/106597002_2819549394991836_2546933066677797776_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=QrwMLw7L198AX9DqmEf&oh=02cedc351fe867f2227291e71d5c27db&oe=5F4328F3 640w,https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/106597002_2819549394991836_2546933066677797776_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=QrwMLw7L198AX9DqmEf&oh=0c6f30267d221f61095e79b697544fd7&oe=5F4489CC 750w,https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/e35/106597002_2819549394991836_2546933066677797776_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=QrwMLw7L198AX9DqmEf&oh=36ab2c0e1c847b3c55a410c2264b0e57&oe=5F42C8EC 1080w" alt="Banner" class="img-fluid">
+      <div class="col-lg-6 col-md-12 banner-image" style="background-color:cornsilk;">
+        
+        <img srcset="https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/106597002_2819549394991836_2546933066677797776_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=QrwMLw7L198AX9DqmEf&oh=02cedc351fe867f2227291e71d5c27db&oe=5F4328F3 640w,https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/106597002_2819549394991836_2546933066677797776_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=QrwMLw7L198AX9DqmEf&oh=0c6f30267d221f61095e79b697544fd7&oe=5F4489CC 750w,https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/e35/106597002_2819549394991836_2546933066677797776_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=QrwMLw7L198AX9DqmEf&oh=36ab2c0e1c847b3c55a410c2264b0e57&oe=5F42C8EC 1080w" alt="Banner" class="img-fluid"  >
+  
       </div>
     </div>
   </div>
@@ -106,30 +38,32 @@
 <!--End banner-->
 <!--About Area -->
 <section class="about-area" id="about">
-  <div class="container-fluid">
+  <div class="container-fluid" style="background-color:yellow;border-radius: 10px;box-shadow: 10px 10px 5px grey;">
     <div class="row">
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12" style="background-color: white;">
         <div class="about-image">
-          <img src="media/about-us.jpeg" alt="About us" class="img-fluid">
+          <img src="media/about.jpeg" alt="About us" class="img-fluid" style="padding-top: 20%;padding-left: 20%;">
         </div>
       </div>
       <div class="col-lg-6 col-md-12 about-title">
-        <h2 class="text-uppercase pt-5">
-          <span>Let me</span>
-          <span>introduce</span>
-          <span>myself</span>
-        </h2>
-        <div class="paragraph py w-75">
-          <p class="para">
-            Hello, Welcome to Animator! Myself Shubham Saroj from India. I make Cartoon Portraits, Vector Portraits,Caricatures, Illustrations, Drawing and etc. It is my hobby to make such art. 
-          </p>
-          <p class="para">
-            I create these Art on requests for others too.If you are one of them who would like to purchase these arts kindly contact me. You can always gift these to your loved ones.
-          </p>
-
+        <center>
+          <h2 class="text-uppercase pt-5">
+            <span>Let Me Introduce Myself</span>
+            
+          </h2>
+          <div class="paragraph py w-75">
+            <p class="para">
+             Myself Shubham Saroj from India. I make Cartoon Portraits, Vector Portraits,Caricatures, Illustrations, Drawing and etc. It is my hobby to make such art. 
+            </p>
+            <p class="para">
+              I create these Art on requests for others too.If you are one of them who would like to purchase these arts kindly contact me. You can always gift these to your loved ones.
+            </p>
+  
+          </div>
+          <a type="button" class="btn button primary-button text-upprrcase" href="https://www.instagram.com/_animator___7/" target="_blank">Instagram</a>
         </div>
-        <a type="button" class="btn button primary-button text-upprrcase" href="https://www.instagram.com/_animator___7/" target="_blank">Instagram</a>
-      </div>
+        </center>
+        
     </div>
   </div>
 </section>
@@ -137,7 +71,7 @@
 <!--Start Services Area-->
 
 <section class="services-area" id="services">
-  <div class="container">
+  <div class="container" style="background-color:yellow;border-radius: 10px;box-shadow: 10px 10px 5px grey;">
     <div class="row">
       <div class="col-lg-12 text-center service-title">
         <h1 class="text-uppercase title-text">Services Offered</h1>
@@ -146,10 +80,10 @@
     </div>
     <div class="container services-list">
       <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12" >
           <div class="services">
             <div class="services-img text-center py-4">
-              <img class="image" srcset="https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/104166709_268163371080073_1788988210355898484_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=GJ0l3vQnt90AX-ltusD&oh=0a91d7ff36ecdc13c2c9d175ca1c0b52&oe=5F222985 640w,https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/104166709_268163371080073_1788988210355898484_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=GJ0l3vQnt90AX-ltusD&oh=a27bdf8f4b42f11a12aa88cd645e3e13&oe=5F2198C1 750w,https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/e35/104166709_268163371080073_1788988210355898484_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=GJ0l3vQnt90AX-ltusD&oh=261b08de66f9930c3e775f6ff290dfc8&oe=5F1F4ABF 1080w" alt="Service-1">
+              <img class="image" srcset="https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/104166709_268163371080073_1788988210355898484_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=Xb-y0-qeM3AAX-kR4Se&oh=226418f1e7907db513d9353749f8e81c&oe=5F4DAB05 640w,https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/104166709_268163371080073_1788988210355898484_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=Xb-y0-qeM3AAX-kR4Se&oh=f3f19fbf3f5bae3071e07c49fce74138&oe=5F4D1A41 750w,https://instagram.fbom10-1.fna.fbcdn.net/v/t51.2885-15/e35/104166709_268163371080073_1788988210355898484_n.jpg?_nc_ht=instagram.fbom10-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=Xb-y0-qeM3AAX-kR4Se&oh=c245ea209da8c7d0886a4f10b2b3177d&oe=5F4EC0BF 1080w" alt="Service-1">
             </div>
             <h5 class="card-body text-uppercase text-center font-roboto">Illustrations</h5>
             <p class="card-text text-center">
@@ -203,43 +137,52 @@
 
 <!--Project Area-->
 <section class="project-area" id="gallery">
-  <div class="container">
+  <div class="container" style="background-color:cyan;border-radius: 10px;box-shadow: 10px 10px 5px grey;">
+    <center>
       <div class="project-title pb-5">
-          <h1 class="text-uppercase title-text">Recently Done</h1>
-          <h1 class="text-uppercase title-text">Quality Work</h1>
-      </div>
+        <h1 class="text-uppercase title-text">Recently Done Quality Work</h1>
+        
+    </div>
+    </center>
+      
 
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-4a08db36-b677-420e-9572-3012119aa6d9"></div>
+  </div>
+</br>
+</br>
+  <div class="container" style="background-color:orange;border-radius: 10px;box-shadow: 10px 10px 5px grey;">
+    <section id="contact" >
+      <center>
+      <h1 class="text-uppercase title-text">Check out my Work on Fiverr</h1>
+      
+      <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
+      
+      <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+           <a itemprop='url' href=https://www.fiverr.com/shubhamsaroj rel="nofollow" target="_blank" style='display: inline-block;'>
+              <div class='fiverr-seller-content' id='fiverr-seller-widget-content-1c09b3cf-153e-441c-baae-5292de0a299f' itemprop='contentURL' style='display: none;'></div>
+              <div id='fiverr-widget-seller-data' style='display: none;'>
+                  <div itemprop='name' >shubhamsaroj</div>
+                  <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+                  <div itemprop='jobtitle'>Seller</div>
+                  <div itemprop='description'>I'm Shubham Saroj, from India, I create attractive intro and outro video, photoshop and graphic design                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
+              </div>
+          </a>
+      </div>
+      
+      <script id='fiverr-seller-widget-script-1c09b3cf-153e-441c-baae-5292de0a299f' src='https://widgets.fiverr.com/api/v1/seller/shubhamsaroj?widget_id=1c09b3cf-153e-441c-baae-5292de0a299f' data-config='{"category_name":"Graphics \u0026 Design"}' async='true' defer='true'></script>
+      <h2 class="text-uppercase title-text" font-size="small">Whatsapp Me Now!
+      <a type="button" href="https://wa.link/lj7lyv" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </center>
+      </section>
+  </div>
 
-<section id="contact">
-<center>
-<h1 class="text-uppercase title-text">Check out my Work</h1>
-
-<!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
-
-<div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
-     <a itemprop='url' href=https://www.fiverr.com/shubhamsaroj rel="nofollow" target="_blank" style='display: inline-block;'>
-        <div class='fiverr-seller-content' id='fiverr-seller-widget-content-1c09b3cf-153e-441c-baae-5292de0a299f' itemprop='contentURL' style='display: none;'></div>
-        <div id='fiverr-widget-seller-data' style='display: none;'>
-            <div itemprop='name' >shubhamsaroj</div>
-            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
-            <div itemprop='jobtitle'>Seller</div>
-            <div itemprop='description'>I'm Shubham Saroj, from India, I create attractive intro and outro video, photoshop and graphic design                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
-        </div>
-    </a>
-</div>
-
-<script id='fiverr-seller-widget-script-1c09b3cf-153e-441c-baae-5292de0a299f' src='https://widgets.fiverr.com/api/v1/seller/shubhamsaroj?widget_id=1c09b3cf-153e-441c-baae-5292de0a299f' data-config='{"category_name":"Graphics \u0026 Design"}' async='true' defer='true'></script>
-<h2 class="text-uppercase title-text" font-size="small">Whatsapp Me Now!
-<a type="button" href="https://wa.link/lj7lyv" target="_blank"><i class="fab fa-whatsapp"></i></a>
-</center>
-</section>
 
         <!--  ========================== Subscribe me Area ============================  -->
+        <div class="container" >
         <section class="subscribe-us-area">
-          <div class="container subscribe">
-              <div class="row">
+          <div class="container subscribe" >
+              <div class="row" >
                   <div class="col-lg-12 text-center subscribe-title">
                       <h4 class="text-uppercase">Contact Now</h4>
                       <p class="para">Please Fill in the details.</p>
@@ -272,54 +215,7 @@
               </div>
           </div>
       </section>
+    </div>
       <!--  ========================== End Subscribe me Area ============================  -->
-
-      <footer class="footer-area">
-        <div class="container">
-            <div class="">
-                <div class="site-logo text-center py-4">
-                    <a href="#"><img src="media/logo.jpeg" alt="logo"></a>
-                </div>
-                <div class="social text-center">
-                    <h5 class="text-uppercase">Follow me</h5>
-                    
-                    <a href="https://www.instagram.com/_animator___7/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    
-                    
-                </div>
-                <div class="copyrights text-center">
-                    <p class="para">
-                        Copyright ©2020 All rights reserved | Developed By
-                        <a href="https://kothawleprem.github.io/portfolio/" target="_blank"><span style="color: var(--primary-color);">Prem Kothawle</span></a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-<!--End Project Area-->
 </main>
-<!--End Main Area-->
-       <script>
-        var x=0;
-        var textEffect = "Welcome to Animator"
-        var container = document.getElementById('effect');
-      
-        function animate() {
-          if(x < textEffect.length){
-            container.innerHTML += textEffect.charAt(x);
-            x++;
-            setTimeout(animate, 100);
-          }
-        }
-        animate();
-      </script>
- 
- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee8ce99aabd2702"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee8ce99aabd2702"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
-</html>
+{% endblock body %}

@@ -1,0 +1,126 @@
+{% load static%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/120b98d6e2.js" crossorigin="anonymous"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <title>The Animator</title>
+
+
+    <!--  Bootstrap css file  -->
+    
+
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <!--  Responsive css file  -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162157591-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162157591-2');
+</script>
+
+
+
+</head>
+
+<body>
+<!--Start Navbar-->
+
+<header class="header_area">
+  <div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#"><img src="https://animator07.herokuapp.com/media/logo.jpeg" alt="Animator"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+          
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a type="button" class="btn button primary-button  text-upprrcase" href="/blog">Blog <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</header>
+{% block body %}
+{% endblock body %}
+</main>
+<footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="https://animator07.herokuapp.com/media/logo.jpeg" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    
+                    <a href="https://www.instagram.com/_animator___7/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    
+                    
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2020 All rights reserved | Developed By
+                        <a href="https://kothawleprem.github.io/portfolio/" target="_blank"><span style="color: var(--primary-color);">Prem Kothawle</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--End Project Area-->
+</main>
+<!--End Main Area-->
+       <script>
+        var x=0;
+        var textEffect = "Welcome to Animator"
+        var container = document.getElementById('effect');
+      
+        function animate() {
+          if(x < textEffect.length){
+            container.innerHTML += textEffect.charAt(x);
+            x++;
+            setTimeout(animate, 100);
+          }
+        }
+        animate();
+      </script>
+ 
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee8ce99aabd2702"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ee8ce99aabd2702"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

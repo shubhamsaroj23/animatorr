@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 from app.models import *
 from django.contrib import messages
 from django.shortcuts import redirect
-def show_home_page(request):
+def home(request):
 	
 	
 
@@ -22,3 +22,6 @@ def show_home_page(request):
             contact.save()
             messages.success(request, ": Sent, Thank You.")
     return render(request,'app/home.html')
+
+def blog(request):
+    return render(request,'app/blog.html')
