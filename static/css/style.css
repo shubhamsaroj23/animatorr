@@ -5,6 +5,7 @@ html,body{
     box-sizing: border-box;
     width:100%;
     height: 100%;
+    
 }
 
 
@@ -177,9 +178,7 @@ h2{
 }
 
 
-.site-main .site-banner .banner-image > img:hover {
-    background-color: yellow;
-  }
+
 
 /* Start About Area */
 
