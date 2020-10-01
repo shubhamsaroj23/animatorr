@@ -1,4 +1,4 @@
-# @the_animatorr
+# @theanimatorr
 Python Django Web Framework Project
 ## Run Locally!
 #### 1) Download the zip or clone.
@@ -10,7 +10,6 @@ Python Django Web Framework Project
 ``py manage.py makemigrations
 ``
 
-``
 py manage.py migrate
 ``
 #### 4) Create Superuser
