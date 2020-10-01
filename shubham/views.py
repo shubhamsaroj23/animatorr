@@ -20,7 +20,7 @@ def home(request):
         else:
             contact = Contact(name=name, email=email, phone=phone, content=content)
             contact.save()
-            messages.success(request, ": Sent, Thank You.")
+            messages.success(request, ": Sent, thankyou")
     return render(request,'app/home.html')
 
 def blog(request):
